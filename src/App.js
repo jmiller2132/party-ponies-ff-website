@@ -6,7 +6,8 @@ import { getFirestore, collection, query, orderBy, onSnapshot, addDoc, setDoc, d
 // Define global variables for Firebase configuration, provided by the Canvas environment
 // These variables are automatically injected by the environment where this code runs.
 // If running locally, you might need to mock them or provide your own Firebase config.
-const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
+// UPDATED: Set appId to your manually created Firebase project ID "party-ponies"
+const appId = "party-ponies"; // typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
 const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};
 const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
 
